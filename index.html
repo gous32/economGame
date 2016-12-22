@@ -20,15 +20,22 @@
           <div class="row">
             <div class="col-md-12">
               <h2>
-                Здравствуй дорогой Игрок!
+                Здравствуй, дорогой Игрок!
               </h2>
             </div>
           </div>
         </div>
 
-        <div class="head-content">
-          <div class="row">
-            <div class="col-md-12">
+        <div class="panel panel-info" id="common">
+          <div class="panel-heading header" role="tab">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" href="#common .content" aria-expanded="true" aria-controls="#common .content">
+                Общая информация
+              </a>
+            </h4>
+          </div>
+          <div class="panel-collapse collapse in content" role="tabpanel" aria-labelledby="#common .label">
+            <div class="panel-body">
 
               <p>
                 Твоему вниманию представляется веб-квест по теме Анализ Инвестиционной Деятельности: «ОДИН ОЧЕНЬ ЗАГРУЖЕННЫЙ ДЕНЬ ПЕРЕД ОТПУСКОМ». Тебе предоставляется роль экономиста в крупной инвестиционной компании, которому начальство поручило, за день до отпуска, выполнить огромный объем работы. Для этого тебе понадобятся все твои навыки и умения, а так же интернет, ведь для ответа на многие задачи тебе будут необходимы специальные знания, которые ты можешь подчерпнуть из таких ресурсов как: <a href="http://ezproxy.el.fa.ru:2052">этот</a>, <a href="http://ezproxy.el.fa.ru:2056/">этот</a>, <a href="http://znanium.com/">этот</a>, <a href="https://www.book.ru/">этот</a>, <a href="https://ezproxy.el.fa.ru:3196/">этот</a>, <a href="https://ezproxy.el.fa.ru:2055/">этот</a> или <a href="http://ezproxy.el.fa.ru:2084/">этот</a>
@@ -36,108 +43,150 @@
               <p>
                 Учти, за каждую верно решенную задачу ты будешь получать 100 очков, за каждую не верно решенную минус 100 очков. Как только счетчик очков станет отрицательным ты будешь уволен и игра закончится.
               </p>
-            </div>
 
+            </div>
           </div>
         </div>
 
-        <div class="user-head">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>
+        <div class="panel panel-default" id="user">
+          <div class="panel-heading header" role="tab">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" href="#user .content" aria-expanded="true" aria-controls="#user .content">
                 А теперь давай познакомимся, как тебя зовут?
-              </h3>
+              </a>
+            </h4>
+          </div>
+          <div class="panel-collapse collapse in content" role="tabpanel" aria-labelledby="#user .label">
+            <div class="panel-body">
+
+              <div class="user-content">
+                <div class="row">
+                  <div class="col-md-12">
+                    <form class="credentials">
+                      <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Иванов Иван Иванович">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="department">Факультет</label>
+                        <input type="text" class="form-control" id="department" placeholder="Ловли бабочек">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="year">Курс</label>
+                        <input type="text" class="form-control" id="year" placeholder="На север">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="group">Группа</label>
+                        <input type="text" class="form-control" id="group" placeholder="Ли">
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <div class="user-content">
-          <div class="row">
-            <div class="col-md-12">
-              <form class="credentials">
-                <div class="form-group">
-                  <label for="name">Имя</label>
-                  <input type="text" class="form-control" id="name" placeholder="Иванов Иван Иванович">
-                </div>
-
-                <div class="form-group">
-                  <label for="department">Факультет</label>
-                  <input type="text" class="form-control" id="department" placeholder="Ловли бабочек">
-                </div>
-
-                <div class="form-group">
-                  <label for="year">Курс</label>
-                  <input type="text" class="form-control" id="year" placeholder="На север">
-                </div>
-
-                <div class="form-group">
-                  <label for="group">Группа</label>
-                  <input type="text" class="form-control" id="group" placeholder="Ли">
-                </div>
-
-              </form>
-            </div>
-          </div>
-        </div>
 
 
         <div class="row button-row">
           <div class="col-md-12" style="text-align: center">
-            <button class="btn btn-success" type="submit">Поехали!</button>
+
+            <button class="btn btn-success" type="submit" id="start-game">Поехали!</button>
 
           </div>
         </div>
 
-        <div class="main-content">
-          <div class="row">
-            <div class="col-md-12">
-              <img src="1.jpg" class="img-rounded">
-            </div>
+
+        <div class="panel panel-default" id="q1" style="display: none">
+          <div class="panel-heading header" role="tab">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" href="#q1 .content" aria-expanded="true" aria-controls="#q1 .content">
+                Вопрос 1
+              </a>
+            </h4>
           </div>
+          <div class="panel-collapse collapse in content" role="tabpanel" aria-labelledby="#q1 .label" style="display: none;">
+            <div class="panel-body">
 
-          <div class="row">
-            <div class="col-md-12">
-              <p></p>
-              <p>
-                хабр, обсуждение новой схемы работы криптовымогателя
-              </p>
-              <p>
-                SergioBarbery: Создание пустых файлов %AppData%\been_here и %AppData%\server_step_one не подойдет в качестве прививки? Или там есть какие-то данные?
-              </p>
-              <p>
-
-                Prototik: Достаточно пустого been_here, код ведь на скриншоте есть.
-              </p>
-              <p>
-
-                AVX: А следующая версия будет проверять что-то другое, а увидев только эти файлы, сотрёт всё к чертям и покажет картинку типа повар-расист.jpg :-)
-              </p>
-              <p>
-
-                mwizard: А как же совместимость с предыдущими версиями? :) Выпустил в продакшен — все, поддерживай…
-              </p>
-              <p>
-
-                sergarcada: «Для вашего вируса имеется 3 обновления. Установить сейчас?» И варианты: обновить и перезагрузить, отложить на 10 мин, отложить на 4 часа, установить windows 10.
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">Это правильный ответ</button>
-                <button type="button" class="btn btn-default">Неправильный ответ</button>
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="1.jpg" class="img-rounded">
+                </div>
               </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <p></p>
+                  <p>
+                    хабр, обсуждение новой схемы работы криптовымогателя
+                  </p>
+                  <p>
+                    SergioBarbery: Создание пустых файлов %AppData%\been_here и %AppData%\server_step_one не подойдет в качестве прививки? Или там есть какие-то данные?
+                  </p>
+                  <p>
+
+                    Prototik: Достаточно пустого been_here, код ведь на скриншоте есть.
+                  </p>
+                  <p>
+
+                    AVX: А следующая версия будет проверять что-то другое, а увидев только эти файлы, сотрёт всё к чертям и покажет картинку типа повар-расист.jpg :-)
+                  </p>
+                  <p>
+
+                    mwizard: А как же совместимость с предыдущими версиями? :) Выпустил в продакшен — все, поддерживай…
+                  </p>
+                  <p>
+
+                    sergarcada: «Для вашего вируса имеется 3 обновления. Установить сейчас?» И варианты: обновить и перезагрузить, отложить на 10 мин, отложить на 4 часа, установить windows 10.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-default answer" data-num="0">
+                      Неправильный ответ 1
+                    </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-default answer" data-num="1">
+                      Это правильный ответ
+                    </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-default answer" data-num="2">
+                      Неправильный ответ 2
+                    </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-default answer" data-num="2">
+                      Неправильный ответ 3
+                    </button>
+                </div>
+              </div>
+
             </div>
           </div>
-
         </div>
 
 
       </div>
     </div>
   
+
+  <script src="script.js"></script>
 
 
   </body>
