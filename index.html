@@ -36,11 +36,6 @@
           </div>
           <div class="panel-collapse collapse in content" role="tabpanel" aria-labelledby="#common .label">
             <div class="panel-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <img src="1.jpg" class="img-rounded">
-                </div>
-              </div>
 
               <p>
                 Твоему вниманию представляется веб-квест по теме Анализ Инвестиционной Деятельности: «ОДИН ОЧЕНЬ ЗАГРУЖЕННЫЙ ДЕНЬ ПЕРЕД ОТПУСКОМ». Тебе предоставляется роль экономиста в крупной инвестиционной компании, которому начальство поручило, за день до отпуска, выполнить огромный объем работы. Для этого тебе понадобятся все твои навыки и умения, а так же интернет, ведь для ответа на многие задачи тебе будут необходимы специальные знания, которые ты можешь подчерпнуть из таких ресурсов как: <a href="http://ezproxy.el.fa.ru:2052">этот</a>, <a href="http://ezproxy.el.fa.ru:2056/">этот</a>, <a href="http://znanium.com/">этот</a>, <a href="https://www.book.ru/">этот</a>, <a href="https://ezproxy.el.fa.ru:3196/">этот</a>, <a href="https://ezproxy.el.fa.ru:2055/">этот</a> или <a href="http://ezproxy.el.fa.ru:2084/">этот</a> (Убедитесь, что вы авторизованы на портале finuna).
@@ -124,6 +119,12 @@
           </div>
           <div class="panel-collapse collapse in content" role="tabpanel" aria-labelledby="#example .label" style="display: none;">
             <div class="panel-body">
+
+              <div class="row imgg">
+                <div class="col-md-12">
+                  <img src="1.jpg" class="img-rounded">
+                </div>
+              </div>
 
               <div class="row">
                 <div class="col-md-12">
@@ -1075,6 +1076,93 @@
       </div>
     </div>
   
+
+    <div class="score btn-success">
+      <div class="fl">
+        <div class="score-head">
+          Ваш счет:
+        </div>
+
+        <div class="score-body">
+          0
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade loose" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Вы уволены!</h4>
+          </div>
+          <div class="modal-body">
+            <img src="fail.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.location.reload()">Попробовать снова</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade win" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Вы выграли!</h4>
+          </div>
+          <div class="modal-body">
+
+            <div class="row">
+              <div class="col-md-12">
+                <img src="2.jpg">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                Имя: <span id="rname"></span>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-12">
+                Факультет: <span id="rdepartment"></span>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-12">
+                Курс: <span id="rcourse"></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                Группа: <span id="rgroup"></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                Счет: <span id="rscore"></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                Секретный код: <span id="rcode"></span>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.location.reload()">Попробовать снова</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
   <script src="script.js"></script>
 
