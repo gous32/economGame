@@ -83,6 +83,7 @@ function createAnswerFunction(idQuestion, node, correctNum, idNext, bigNum) {
     $buttons.filter(':not([data-num=' + correctNum + '])').addClass('btn-danger');
     $buttons.removeClass('btn-default');
     $('#' + idNext + ' .content').show(500);
+    $('button', $('#' + idNext + ' .content')).removeAttr('disabled');
   }
 }
 
@@ -533,7 +534,7 @@ datas4 = [
   },
 
   {
-    head: "Вопрос 6.5",
+    head: "Вопрос 9.5",
     texts: [
       'Тремя наиболее распространенными подходами к оценке бизнеса являются: ',
       'А) по балансовой стоимости, по скорректированной балансовой стоимости, рыночный;',
@@ -583,10 +584,10 @@ createTestQuestion(datas3[4], 6, true);
 createBigQuestion(927, 7);
 createBigQuestion(310, 8);
 
-createTestQuestion(datas3[0], 9);
-createTestQuestion(datas3[1], 9);
-createTestQuestion(datas3[2], 9);
-createTestQuestion(datas3[3], 9);
-createTestQuestion(datas3[4], 9, true);
+createTestQuestion(datas4[0], 9);
+createTestQuestion(datas4[1], 9);
+createTestQuestion(datas4[2], 9);
+createTestQuestion(datas4[3], 9);
+createTestQuestion(datas4[4], 9, true);
 
 createBigQuestion(6, 10, true);
