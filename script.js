@@ -4,6 +4,22 @@ var score = 0;
 var $score = $('.score');
 var $scoreVal = $('.score-body');
 
+$('#user input').keypress(function() {
+  let inputs = $('#user input');
+  var active = true;
+  for (var i = 0; i < inputs.length; i++) {
+    active = active && $(inputs[i]).val();
+  }
+
+  if (!active) {
+    $('#start-game').attr('disabled', 'disabled');
+  } else {
+    $('#start-game').removeAttr('disabled');
+  }
+});
+
+$('.score').hide();
+
 function correctAnswer() {
   score += 100;
   $scoreVal[0].innerHTML = score;
@@ -30,6 +46,7 @@ function doWin() {
 }
 
 $('#start-game').click(function() {
+  $('.score').show(500);
   $('.button-row').hide(1000);
   $('#common .content').collapse('hide')
   $('#user').hide(1000);
@@ -39,6 +56,7 @@ $('#start-game').click(function() {
 });
 
 function showQuestions() {
+  $('.imggg').show(500);
   $('.question:not(#text-example)').show(500);
 }
 
